@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+
+*
+{
+	margin:0;
+}
+body
+{
+	min-width:1232px;
+}
+a
+{
+	text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6
+{
+	font-weight:normal;
+}
+#navbar
+{
+	width:100%;
+	height:100px;
+	background:#000;
+}
+.mainContainer
+{
+	width:80%;
+	margin:auto;
+}
+#logo
+{
+	width:100px;
+	height:100px;
+	background:url(images/logo.png);
+	float:left;
+}
+#title
+{
+	width:300px;
+	height:100px;
+	background:url(images/name.png);
+	float:left;
+}
+#navlinksdiv
+{
+	float:right;
+	margin-top:50px;
+}
+#navlinksdiv li a
+{
+	font-family:'Signika', sans-serif;
+	font-size:20px;
+	color:#FFF;
+}
+#navlinksdiv li
+{
+	display:inline;
+	padding:9px;
+	background:#2775E1;
+	border-radius:3px;
+	margin-left:15px;
+}
+#navlinksdiv li:hover
+{
+	background:#999;
+}
+#navlinksdiv li.active
+{
+	background:#999;
+}
+#motto
+{
+	width:100%;
+	height:80px;
+	margin-top:30px;
+	text-align:center;
+}
+#motto h1
+{
+	font-family:'Signika', sans-serif;
+	font-size:42px;
+}
+#stepsContainer
+{
+	width:100%;
+	height:300px;
+	margin-bottom:50px;
+}
+.steps
+{
+	width:30%;
+	height:100%;
+	background:#CCC;
+	border-radius:12px;
+	float:left;
+	padding:1%;
+}
+.steps h2
+{
+	font-family:'Signika', sans-serif;
+	font-size:30px;
+	color:#2775E1;
+}
+.stepImages
+{
+	width:300px;
+	height:200px;
+	margin:auto;
+}
+.marginRight
+{
+	margin-right:2%;
+}
+.steps p
+{
+	font-family:'Open Sans', sans-serif;
+	font-size:16px;
+}
+#introText
+{
+	width:80%;
+	height:auto;
+	margin:auto;
+	text-align:center;
+	font-family:'Open Sans', sans-serif;
+	font-size:20px;
+	color:#000;
+	margin-bottom:50px;
+}
+#textContainer
+{
+	width:98%;
+	padding:1%;
+	font-family:'Open Sans', sans-serif;
+	color:#000;
+	margin-bottom:30px;
+}
+#textContainer h1
+{
+	font-family:'Signika', sans-serif;
+	font-size:42px;
+	margin-bottom:10px;
+}
+#textContainer h2
+{
+	font-family:'Signika', sans-serif;
+	color:#2775E1;
+}
+#textContainer ul
+{
+	margin-bottom:15px;
+}
+#footer
+{
+	width:100%;
+	height:30px;
+	line-height:30px;
+	background:#000;
+	font-family:'Open Sans', sans-serif;
+	font-size:14px;
+	text-align:center;
+	color:#FFF;
+}

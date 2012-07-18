@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>Wireframer3000</title>
+	<meta charset="utf-8" />
+	
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Included CSS Files -->
+	<link href='http://fonts.googleapis.com/css?family=Balthazar' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="foundation-3.0.5/stylesheets/foundation.css">
+	<link rel="stylesheet" type="text/css" href="foundation-3.0.5/stylesheets/ie.css">
+
+	<!--[if lt IE 9]><link rel="stylesheet" href="stylesheets/ie.css"><![endif]-->
+
+	<script src="foundation-3.0.5/javascripts/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags --><!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="foundation-3.0.5/javascripts/jquery.min.js"></script>
+	<script src="foundation-3.0.5/javascripts/jquery.reveal.js"></script>
+	<script src="foundation-3.0.5/javascripts/jquery.orbit-1.4.0.js"></script>
+	<script src="foundation-3.0.5/javascripts/jquery.customforms.js"></script>
+	<script src="foundation-3.0.5/javascripts/jquery.placeholder.min.js"></script>
+	<script src="foundation-3.0.5/javascripts/jquery.tooltips.js"></script>
+	<script src="foundation-3.0.5/javascripts/app.js"></script>
+  
+    <script type="text/javascript">
+        $(function() {
+            $("#toggle").click(function() {
+                var elem = document.getElementById("toggle");
+				if(elem.innerHTML == "Show Wireframe Picture") {
+					$("#image").show("slow");
+					elem.innerHTML = "Hide Wireframe Picture";
+				} else {
+					$("#image").hide("slow");
+					elem.innerHTML = "Show Wireframe Picture";
+				}	  
+            });
+        });
+    </script>
+    
+ 
+  
+  
+  
+
+</head>
+
+<body>
+
+<div class="row">
+
+<h1>WIREFRAMER<span style="color: #e49711;text-shadow: black 0.1em 0.1em 0.2em">3000</span></h1>
+
+<ul class="nav-bar">
+  <li><a href="index.html">Home</a></li>
+  <li class="has-flyout active">
+    <a href="#">Wireframer3000</a>
+    <a href="#" class="flyout-toggle"><span> </span></a>
+    <ul class="flyout">
+      <li class="active"><a href="features.html">Features</a></li>
+      <li><a href="categories.html">Categories</a></li>
+    </ul>
+  </li>
+  <li><a href="team.html">Team Members</a></li>
+</ul>
+
+	<h2 id="features">Features</h2>
+
+
+	<a id="toggle" class="[success, alert, secondary] button">Hide Wireframe Picture</a>
+	<img id="image" src="mockup.png"  alt="pic" />	<br /><br />
+	
+			
+
+
+
+
+
+<dl class="tabs">
+  <dd class="active"><a href="#simple1">Editing</a></dd>
+  <dd><a href="#simple2">Movement</a></dd>
+  <dd><a href="#simple3">Positioning</a></dd>
+  <dd><a href="#simple4">Other</a></dd>
+  </dl>
+
+<ul class="tabs-content">
+    <li class="active" id="simple1Tab">
+        <span class="bold_orange">Cut</span> - Remove the selected item from the mockup area and save it to the clipboard.<br /> 
+        <span class="bold_orange">Copy</span> - Copy the selected item from the mockup area and save it to the clipboard.<br />
+        <span class="bold_orange">Paste</span> - Place the item saved in the clipboard into the mockup area.<br />
+        <span class="bold_orange">Undo</span> - Undo the last action.<br />
+        <span class="bold_orange">Redo</span> - Redo the last action undone.<br /></li>
+  
+    <li id="simple2Tab"> 
+        <span class="bold_orange">Group</span> - Select multiple items and attach them together as one item so that they can be utilized as a group.  <br />
+        <span class="bold_orange">Ungroup</span> - Separate a group of items that have been attached, so they can be utilized individually.<br />
+        <span class="bold_orange">Lock</span> - Lock an item in place so that it is unable to be altered.<br />
+        <span class="bold_orange">Unlock</span> - Release an item that is locked so it can be altered or moved.<br />
+        <span class="bold_orange">Drag and Drop</span> - Users are able to drag an item from the side bar in order to place them in the mockup area. They can also drag and drop items already placed in the mockup  area.<br /></li>
+
+    <li id="simple3Tab">
+        <span class="bold_orange">Relative Positioning</span> - Positions of items already in the mockup area are used to help the user place the current item relative to others. <br />
+        <span class="bold_orange">Toggle Grid</span> - A variable size grid is superimposed on the mockup area so that users can use it to align items. <br />
+        <span class="bold_orange">Toggle Snap to Grid</span> - Items in the mockup area are automatically moved to the closest grid line or grid intersection when dragged.<br /></li>
+
+    <li id="simple4Tab">
+        <span class="bold_orange">Search Bar</span> - A utility to search for a certain item and immediately add it to the mockup area.<br />
+        <span class="bold_orange">Link Pages</span> - Within the wireframe tool, pages can link to each other, to simulate ëusingí the website. <br />
+        <span class="bold_orange">Export</span> - Save the wireframe as an image or PDF. <br />
+        <span class="bold_orange">Hot Keys</span> - combinations of keystrokes that have a preset action, instead of using the mouse and menus to accomplish the same action.<br />
+        <span class="bold_orange">Help</span> - Explains features to user.<br /></li>
+</ul>
+
+
+</div>
+</body>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html> 
+<head>
+
+	<title>Wireframer3000</title>
+
+	<meta charset="utf-8" />
+	<link href='http://fonts.googleapis.com/css?family=Balthazar' rel='stylesheet' type='text/css'>
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+  
+
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" type="text/css" href="foundation-3.0.5/stylesheets/foundation.css">
+	<link rel="stylesheet" type="text/css" href="foundation-3.0.5/stylesheets/ie.css">
+	<link href='http://fonts.googleapis.com/css?family=Balthazar' rel='stylesheet' type='text/css'>
+
+	<!--[if lt IE 9]><link rel="stylesheet" href="stylesheets/ie.css"><![endif]-->
+
+	<script src="foundation-3.0.5/javascripts/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags --><!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <script src="foundation-3.0.5/javascripts/jquery.min.js"></script>
+  	<script src="foundation-3.0.5/javascripts/jquery.reveal.js"></script>
+  	<script src="foundation-3.0.5/javascripts/jquery.orbit-1.4.0.js"></script>
+  	<script src="foundation-3.0.5/javascripts/jquery.customforms.js"></script>
+  	<script src="foundation-3.0.5/javascripts/jquery.placeholder.min.js"></script>
+	<script src="foundation-3.0.5/javascripts/jquery.tooltips.js"></script>
+  	<script src="foundation-3.0.5/javascripts/app.js"></script>
+  	<script type="text/javascript">
+		$(function() {
+			$("#toggle").click(function() {
+				var elem = document.getElementById("toggle");
+				if(elem.innerHTML == "Show Wireframe Picture") {
+					$("#image").show("slow");
+					elem.innerHTML = "Hide Wireframe Picture";
+				} else {
+					$("#image").hide("slow");
+					elem.innerHTML = "Show Wireframe Picture";
+				}	  
+   	 		});
+		});
+  	</script>
+  
+  
+  
+
+</head>
+
+<body>
+
+<div class="row">
+<h1>WIREFRAMER<span style="color: #e49711;text-shadow: black 0.1em 0.1em 0.2em">3000</span></h1>
+<ul class="nav-bar">
+  <li><a href="index.html">Home</a></li>
+  <li class="has-flyout active">
+    <a href="#">Wireframer3000</a>
+    <a href="#" class="flyout-toggle"><span> </span></a>
+    <ul class="flyout">
+      <li><a href="features.html">Features</a></li>
+      <li class="active"><a href="categories.html">Categories</a></li>
+    </ul>
+  </li>
+  <li><a href="team.html">Team Members</a></li>
+</ul>
+
+
+	<h2>Catagories</h2>
+
+	<a id="toggle" class="[success, alert, secondary] button">Hide Wireframe Picture</a>
+	<img id="image" src="mockup.png"  alt="pic" />	
+	<br /><br />
+
+
+
+
+<dl class="tabs">
+  <dd class="active"><a href="#simple1">Buttons</a></dd>
+  <dd><a href="#simple2">Forms</a></dd>
+  <dd><a href="#simple3">Media</a></dd>
+  <dd><a href="#simple4">Menu</a></dd>
+  <dd><a href="#simple5">Layouts</a></dd>
+  </dl>
+
+<ul class="tabs-content">
+  <li class="active" id="simple1Tab">
+  <table>
+  <tr>
+  	<td class="fill">Button </td>
+  	<td class="fill">Combobox </td>
+  	<td class="fill">Radio button</td>
+  	<td class="fill">Checkbox </td>
+  </tr>
+  
+  <tr>
+  	<td><img src="images/buttons/button.png" alt="Button" /></td>
+  	<td><img src="images/buttons/checkbox.png" alt="Combobox" /></td>
+  	<td><img src="images/buttons/radio.png" alt="Radio"/></td>
+  	<td><img src="images/buttons/combobox.png" alt="Checkbox" /> </td>
+  </tr>
+  
+  
+</table>
+
+  </li>
+  
+  
+  <li id="simple2Tab">
+  
+  <table>
+  	<tr>
+  		<td class="fill">Date chooser</td>
+  		<td class="fill">Text box</td>
+  		<td class="fill">List</td>
+  		<td class="fill">Numeric Stepper</td>
+  	</tr>
+  
+	<tr>
+  		<td><img src="images/Forms/date.png" alt="Date"/></td>
+  		<td><img src="images/Forms/textbox.png " alt="TextBox" /></td>
+  		<td><img src="images/Forms/list.png" alt="List"/></td>
+  		<td><img src="images/Forms/stepper.png" alt="NumericStepper"/></td>
+  	</tr>  
+  
+  </table>
+  
+  </li>
+  <li id="simple3Tab">
+    <table>
+  <tr>
+  	<td class="fill">Image </td>
+  	<td class="fill">Icon </td>
+  	<td class="fill">Map</td>
+  	<td class="fill">Video </td>
+    <td class="fill">Graphs </td>
+  </tr>
+  
+  
+  <tr>
+  	<td><img src="images/media/image.png" alt="iamges"/> </td>
+  	<td><img src="images/media/icon.png" alt="icon"/></td>
+  	<td><img src="images/media/map.png" alt="map" /></td>
+  	<td><img src="images/media/video.png" alt="video"/> </td>
+    <td><img src="images/media/graph.png" alt="graphs"/></td>
+  </tr>
+  
+  
+</table>
+  
+ 
+  </li>
+  
+  <li id="simple4Tab">
+   <table>
+  <tr>
+  	<td class="fill">Menu</td>
+  	<td class="fill">Menu bar</td>
+  	<td class="fill">Button Bar</td>
+  	<td class="fill">Formatting Bar</td>
+  </tr>
+  
+  <tr>
+  	<td><img src="images/menu/menu.png" alt="menu" /> </td>
+  	<td><img src="images/menu/menubar.png" alt="menubar" /></td>
+  	<td><img src="images/menu/buttonbar.png" alt="buttonbar" /> </td>
+  	<td><img src="images/menu/formattingbar.png" alt="formattingbar"/></td>
+  </tr>
+    
+</table>
+  
+  
+  
+  </li>
+  
+  <li id="simple5Tab">
+  <table>
+  <tr>
+  	<td class="fill">Accordion</td>
+  	<td class="fill">Tabs Bar</td>
+  	<td class="fill">Links Bar</td>
+  	<td class="fill">Vertical Tabs</td>
+  	<td class="fill">Table</td>
+  </tr>
+  
+  <tr>
+  	<td><img src="images/layouts/accordion.png" alt="acco" /> <br /></td>
+  	<td><img src="images/layouts/tabsbar.png" alt="tabs"/><br /></td>
+  	<td><img src="images/layouts/linkbar.png" alt="linksbar"/><br /></td>
+  	<td><img src="images/layouts/verticaltabs.png" alt="verticaltabs" /> <br /></td>
+  	<td><img src="images/layouts/table.png" alt="table"><br /></td>
+  </tr>
+  
+  
+</table>
+  
+  </li>
+</ul>
+
+
+</div>
+</body>
